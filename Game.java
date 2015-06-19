@@ -49,8 +49,9 @@ public class Game extends JFrame implements KeyListener{
 					if(player.hasTurbo()){
 						player.moveX(6);
 						player.setFireImage("res//fire.png");
+					}else{
+						player.moveX(3);
 					}
-					player.moveX(3);
 					break;
 				case KeyEvent.VK_SPACE:
 					player.shoot();
